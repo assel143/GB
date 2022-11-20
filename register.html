@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RegisterForm</title>
+
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>RegisterForm</h1>
+    <p>Please fill out form values</p>
+
+    <!--
+        GET
+        POST
+        PUT
+        DELETE
+        PATCH
+    -->
+
+        <form>
+            <fieldset>
+                <input type="color">
+            </fieldset>
+            <fieldset>
+               <input list="holiday-names" id="holiday-choice" name="holiday-choice"/> 
+               <datalist id="holiday-names">
+                <option value="first holiday">
+                    <option value="second holiday">
+                        <option value="third holiday">
+               </datalist>
+            </fieldset>
+
+        <fieldset>
+            <legend>User Info</legend>
+            <label for="firstname"><input required type="text" id="firstname" name="firstnsme">Enter your first name</label> 
+        <label for="lastname"><input type="text" id="lastname" name="lastname">Enter your first name</label>
+        <label for="password"><input type="password" id="password" pattern="" name="password">Enter your first name</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Gender</legend>
+           <label for="male"><input type="radio" id="male" name="gender">Male</label>
+           <!--<label ><input type="radio" id="female">Female</label>-->
+            <label for="female"><input type="radio" id="female" name="gender"> Female</label>
+            <input type="checkbox"checked>
+
+        </fieldset>
+        <fieldset>
+            <legend>City</legend>
+            <select name="City" id="">
+                <option value="Astana">Astana</option>
+                <option value="Almaty">Almaty</option>
+                <option value="Other">Other</option>
+            </select>         
+        </fieldset>
+        <fieldset>
+            <input type="search" accesskey="s">
+            <label>Hint: ctrl + </label>
+            <input type="file" multiple>
+            <button>test</button>
+            <button type="submit">Submit</button>
+
+        </fieldset>
+
+        <fieldset>
+            <input type="text" inputmode="numeric" placeholder="numeric value"/>
+            <input type="text" inputmode="tel" placeholder="tel value"/>
+            <input type="text" inputmode="decimal" placeholder="decimal value"/>
+            <input type="text" inputmode="email" placeholder="email value"/>
+            <input type="text" inputmode="url" placeholder="url value"/>
+            <input type="text" inputmode="search" placeholder="search value"/>
+        </fieldset>
+    </form>
+<!--
+    firstname:Assel
+    lastname:Batrasheva
+    city:Other
+    gender:Female
+-->
+
+</body>
+</html>
